@@ -31,8 +31,8 @@ Foto 4000x3000 dengan angka 500 menjadi 500x375. Hasilnya tersimpan di folder ya
 
 ## Catatan
 
-- Ketik nama hasil tanpa akhiran. Akhiran (`.jpg`, `.png`) diambil dari file asli, jadi kalau kamu ketik `foto_kecil.jpg` hasilnya menjadi `foto_kecil.jpg.jpg`.
-- Nama hasil yang sama dengan file asli akan menimpa file asli.
-- Angka yang kamu masukkan membatasi sisi terpanjang gambar. Gambar yang sudah lebih kecil dari angka itu tidak diperbesar.
-- Format mengikuti file asli. JPG, PNG, dan format lain yang didukung Pillow bisa dipakai.
-- Error `No such file or directory` berarti nama file salah atau gambarnya tidak ada di folder yang sama dengan `resize.py`.
+- Ketik nama hasil tanpa `.jpg` atau `.png`, karena akhirannya ditambah otomatis. Kalau kamu ketik `foto_kecil.jpg`, hasilnya jadi `foto_kecil.jpg.jpg`.
+- Jangan pakai nama yang sama dengan file asli. Kalau sama, file asli akan tertimpa.
+- Angka yang kamu isi adalah batas untuk sisi terpanjang gambar. Gambar yang sudah lebih kecil tidak dibesarkan.
+- Format hasil sama dengan file asli.
+- Muncul error `No such file or directory`? Cek nama filenya, dan pastikan gambarnya satu folder dengan `resize.py`.
